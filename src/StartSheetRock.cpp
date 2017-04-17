@@ -24,10 +24,11 @@ int main(int argc, char** argv )
     cvtColor( image, gray_image, CV_BGR2GRAY );
 
     // Binarization.
-    
+    Mat binarized;
+    adaptiveThreshold(gray_image, binarized, 255, ADAPTIVE_THRESH_GAUSSIAN_C,THRESH_BINARY,11,2);
 
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", gray_image);
+    imshow("Display Image", binarized);
     waitKey(0);
     return 0;
 }
