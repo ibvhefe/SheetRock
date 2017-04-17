@@ -5,10 +5,10 @@
 using namespace cv;
 int main(int argc, char** argv )
 {
+    // Read the image.
     std::stringstream ss;
-    ss << "../samples/sample";
+    ss << "../samples/";
     ss << argv[1];
-    ss << ".jpg";
     std::string filename;
     ss >> filename;
     Mat image;
@@ -18,8 +18,16 @@ int main(int argc, char** argv )
         printf("No image data \n");
         return -1;
     }
+
+    // Grayscale.
+    Mat gray_image;
+    cvtColor( image, gray_image, CV_BGR2GRAY );
+
+    // Binarization.
+    
+
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", image);
+    imshow("Display Image", gray_image);
     waitKey(0);
     return 0;
 }
