@@ -1,3 +1,0 @@
-/home/sebi/Desktop/SheetRock/src/CMakeFiles/edit_cache.dir
-/home/sebi/Desktop/SheetRock/src/CMakeFiles/rebuild_cache.dir
-/home/sebi/Desktop/SheetRock/src/CMakeFiles/StartSheetRock.dir

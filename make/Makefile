@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/sebi/Desktop/SheetRock/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sebi/Desktop/SheetRock/src
+CMAKE_BINARY_DIR = /home/sebi/Desktop/SheetRock/make
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/src/CMakeFiles /home/sebi/Desktop/SheetRock/src/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/make/CMakeFiles /home/sebi/Desktop/SheetRock/make/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/make/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

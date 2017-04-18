@@ -57,7 +57,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/sebi/Desktop/SheetRock/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sebi/Desktop/SheetRock/src
+CMAKE_BINARY_DIR = /home/sebi/Desktop/SheetRock/make
 
 #=============================================================================
 # Target rules for target CMakeFiles/StartSheetRock.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/sebi/Desktop/SheetRock/src
 CMakeFiles/StartSheetRock.dir/all:
 	$(MAKE) -f CMakeFiles/StartSheetRock.dir/build.make CMakeFiles/StartSheetRock.dir/depend
 	$(MAKE) -f CMakeFiles/StartSheetRock.dir/build.make CMakeFiles/StartSheetRock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sebi/Desktop/SheetRock/src/CMakeFiles --progress-num=1,2 "Built target StartSheetRock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sebi/Desktop/SheetRock/make/CMakeFiles --progress-num=1,2 "Built target StartSheetRock"
 .PHONY : CMakeFiles/StartSheetRock.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/StartSheetRock.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/StartSheetRock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/src/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/make/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/StartSheetRock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sebi/Desktop/SheetRock/make/CMakeFiles 0
 .PHONY : CMakeFiles/StartSheetRock.dir/rule
 
 # Convenience name for target.
