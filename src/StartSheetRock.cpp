@@ -2,6 +2,7 @@
 #include <opencv2/opencv.hpp>
 #include <string>
 #include <sstream>
+#include "ZhangSuenThinning.cpp"
 using namespace cv;
 int main(int argc, char** argv )
 {
@@ -25,10 +26,14 @@ int main(int argc, char** argv )
 
     // Binarization.
     Mat binarized;
-    adaptiveThreshold(gray_image, binarized, 255, ADAPTIVE_THRESH_GAUSSIAN_C,THRESH_BINARY,11,2);
+    adaptiveThreshold(gray_image, binarized, 255, ADAPTIVE_THRESH_GAUSSIAN_C,THRESH_BINARY_INV,11,2);
+
+    // Thinning.
+    Mat thinned;
+    thinning(binarized, thinned);
 
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", binarized);
+    imshow("Display Image", thinned);
     waitKey(0);
     return 0;
 }
