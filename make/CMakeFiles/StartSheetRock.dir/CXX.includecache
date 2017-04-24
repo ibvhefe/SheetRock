@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/sebi/Desktop/SheetRock/src/RemoveSalt.cpp
+opencv2/opencv.hpp
+-
+
 /home/sebi/Desktop/SheetRock/src/StartSheetRock.cpp
 stdio.h
 -
@@ -17,6 +21,8 @@ sstream
 -
 ZhangSuenThinning.cpp
 /home/sebi/Desktop/SheetRock/src/ZhangSuenThinning.cpp
+RemoveSalt.cpp
+/home/sebi/Desktop/SheetRock/src/RemoveSalt.cpp
 
 /home/sebi/Desktop/SheetRock/src/ZhangSuenThinning.cpp
 opencv2/opencv.hpp
