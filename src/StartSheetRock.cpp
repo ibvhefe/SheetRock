@@ -3,6 +3,8 @@
 #include <string>
 #include <sstream>
 #include "ZhangSuenThinning.cpp"
+#include "RemoveSalt.cpp"
+
 using namespace cv;
 int main(int argc, char** argv )
 {
@@ -32,8 +34,12 @@ int main(int argc, char** argv )
     Mat thinned;
     thinning(binarized, thinned);
 
+    // Remove salt.
+    Mat noiseReduced;
+    removeSalt(thinned, noiseReduced);
+
     namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", thinned);
+    imshow("Display Image", noiseReduced);
     waitKey(0);
     return 0;
 }
