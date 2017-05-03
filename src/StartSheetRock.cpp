@@ -6,6 +6,15 @@
 #include "RemoveSalt.cpp"
 
 using namespace cv;
+
+void markPixel(cv::Mat& src, cv::Mat& dst, int x, int y)
+{
+    cvtColor(src, dst, CV_GRAY2BGR);
+    dst.at<Vec3b>(Point(x,y))[0] = 0;
+    dst.at<Vec3b>(Point(x,y))[1] = 255;
+    dst.at<Vec3b>(Point(x,y))[2] = 0;
+} 
+
 int main(int argc, char** argv )
 {
     // Read the image.
@@ -38,8 +47,12 @@ int main(int argc, char** argv )
     Mat noiseReduced;
     removeSalt(thinned, noiseReduced);
 
-    namedWindow("Display Image", WINDOW_AUTOSIZE );
-    imshow("Display Image", noiseReduced);
+    // Mark pixel.
+    Mat marked;
+    markPixel(noiseReduced, marked, 10, 10);
+
+    namedWindow("Display Image", WINDOW_AUTOSIZE);
+    imshow("Display Image", marked);
     waitKey(0);
     return 0;
 }
